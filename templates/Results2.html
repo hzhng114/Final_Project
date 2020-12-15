@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Steam Games: Grouping Results</title>
+</head>
+<body>
+    <h1>Below are Grouped Games by Chosen Conditions:</h1>
+    <table>
+        <tr>
+            <th>{{group}}</th>
+            <th>Frequency</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

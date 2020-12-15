@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Steam Games: Sorting Results</title>
+</head>
+<body>
+    <h1>Below are Sorted Games by Chosen Conditions:</h1>
+    <table>
+        <tr>
+            <th>Game Name</th>
+            <th>{{sort}}</th>
+            <th>Rank</th>
+            <th>Release Date</th>
+            <th>URL</th>
+        </tr>
+        {% for row in results %}
+        <tr>
+            <td>{{row[0]}}</td>
+            <td>{{row[1]}}</td>
+            <td>{{row[2]}}</td>
+            <td>{{row[3]}}</td>
+            <td>{{row[4]}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

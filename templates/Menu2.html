@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Steam Top 300 Game Group Menu</title>
+</head>
+<body>
+    <h1>Please choose from the following grouping options:</h1>
+    <form action='/results' method='POST'>
+    <p>
+    Group by: <br/>
+        <input type='radio' name='group' 
+                value='Main_Genre' checked='checked'/> Main Genre <br/>
+        <input type='radio' name='group' 
+                value='Developer'/> Developer <br/>
+        <input type='radio' name='group' 
+                value='Publisher'/> Publisher <br/>
+        <input type='radio' name='group' 
+                value='Franchise'/> Franchise <br/>
+    </p>
+    <p>
+    Sort Frequency direction: <br/>
+        <input type='radio' name='dir'
+            value='desc' checked='checked'/>High to Low<br/>
+        <input type='radio' name='dir'
+            value='asc'/>Low to High<br/>
+    </p>
+    <input type='submit' value='Get Groups'/>
+    </form>
+</body>
+</html>

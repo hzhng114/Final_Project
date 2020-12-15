@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF8"/>
+    <title>Steam Top 300 Game Sort Menu</title>
+</head>
+<body>
+    <h1>Please choose from the following sorting options:</h1>
+    <form action='/results' method='POST'>
+    <p>
+    Sort by: <br/>
+        <input type='radio' name='sort' 
+                value='PercentageReview' checked='checked'/> Percentage Score <br/>
+        <input type='radio' name='sort' 
+                value='Price'/> Price <br/>
+        <input type='radio' name='sort' 
+                value='#ofReviews'/> Number of Reviews <br/>
+    </p>
+    <p>
+    Sort direction: <br/>
+        <input type='radio' name='dir'
+            value='desc' checked='checked'/>High to Low<br/>
+        <input type='radio' name='dir'
+            value='asc'/>Low to High<br/>
+    </p>
+    <input type='submit' value='Get Games'/>
+    </form>
+</body>
+</html>
